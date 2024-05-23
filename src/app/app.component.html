@@ -1,0 +1,11 @@
+<div class="outerContainer">
+  <h1>{{title}}</h1>
+  <h2>Add a Todo</h2>
+  <app-add-todo-list (todoAdd)="addTodo($event)"></app-add-todo-list>
+  <h2>Current Todo's</h2>
+  <div class="innerContainer">
+    <div *ngFor="let x of todoArray">
+      <app-todo-list-item [todo]="x" (todoDelete)="deleteTodo($event)"></app-todo-list-item>
+    </div>
+  </div>
+</div>

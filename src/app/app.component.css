@@ -1,0 +1,19 @@
+.outerContainer{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(145, 143, 140);
+  min-height: 100vh;
+}
+
+.innerContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50vw;
+  gap: 1rem;
+  justify-content: center;
+}
